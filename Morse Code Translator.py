@@ -34,11 +34,9 @@ def decrypt(message):
 			raise SystemExit("Error decrypting")
 	return decipher
 # Enter your message here
-opt = input("Do you want to encrypt or decrypt? ")
-msg = input("Enter the message: ")
-if opt.lower()=="encrypt":
-	encrypted = encrypt(msg)
-	print("The encrypted message is " + encrypted)
-elif opt.lower()=="decrypt":
-	decrypted = decrypt(msg)
-	print("The decrypted message is " + decrypted)
+message = "Hello"
+result = encrypt(message.upper())
+print (result)
+message = ".... . .-.. .-.. ---"
+result = decrypt(message)
+print (result)
